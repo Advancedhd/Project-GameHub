@@ -5,6 +5,8 @@
 
 nav li {
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav a {
@@ -18,5 +20,8 @@ nav a:hover {
 }
 
 nav ul {
-    margin: auto;
+    padding-left: 100px; 
+    padding-right: 50px; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
 }
