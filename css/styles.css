@@ -1,0 +1,11 @@
+.active {
+    background-color: #000;
+    color: #FFF;
+    transition: border-bottom .2s, border-left .4s, border-top .6s, border-right .9s;
+}
+
+nav li {
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+}
