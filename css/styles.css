@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FF5733;
+    color: #337EFF;
 }
 
 nav ul {
@@ -27,4 +27,8 @@ nav ul {
     padding-right: 50px; 
     padding-top: 50px; 
     padding-bottom: 50px;
+}
+
+h1 {
+    
 }
