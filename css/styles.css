@@ -10,9 +10,7 @@ nav li {
 nav a {
     color: #000;
     text-decoration: none;
-    padding-left: 40px;
-    padding-top: 25px;
-    padding-right: 40px;
+    padding: 25px;
 }
 
 nav a:hover {
@@ -20,5 +18,7 @@ nav a:hover {
 }
 
 nav ul {
-    padding: 150px; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+    padding-top: 50px; 
 }
