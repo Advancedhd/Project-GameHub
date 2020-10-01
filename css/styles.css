@@ -10,14 +10,13 @@ nav li {
 nav a {
     color: #000;
     text-decoration: none;
-    padding: 15px;
+    padding: 70px;
 }
 
 nav a:hover {
     color: #FF5733;
-    transition: border-bottom .2s, border-left .4s, border-top .6s, border-right .9s;
 }
 
 nav ul {
-    padding: 0px; 
+    padding: 331px; 
 }
