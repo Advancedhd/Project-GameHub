@@ -14,5 +14,10 @@ nav a {
 }
 
 nav a:hover {
+    color: #FF5733;
     transition: border-bottom .2s, border-left .4s, border-top .6s, border-right .9s;
+}
+
+nav ul {
+    padding: 0px; 
 }
