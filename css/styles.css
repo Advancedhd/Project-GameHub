@@ -58,6 +58,7 @@ nav ul {
 }
 
 #logo {
+    background-position: top, left;
     z-index: 3;
     margin-left: 0px ;
     position: absolute;
