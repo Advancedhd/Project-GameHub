@@ -31,7 +31,7 @@ nav ul {
 }
 
 header {
-    background-image: url(/images/NavBar.png);
+    background-image: url('/images/NavBar.png');
     padding: 0px;
     min-height: 100px;
 }
