@@ -32,8 +32,7 @@ nav ul {
 
 header {
     background-image: url('/images/NavBar.png');
-    height: 200px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 } 
