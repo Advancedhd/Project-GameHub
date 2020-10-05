@@ -24,10 +24,8 @@ nav a:hover {
 }
 
 nav ul {
-    padding-left: 100px; 
-    padding-right: 50px; 
-    padding-top: 50px; 
-    padding-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
