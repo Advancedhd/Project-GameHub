@@ -1,7 +1,7 @@
 body {
     background-color: #8E8E8E;
     color: #FFF;
-    font-family: Verdana, 'Segoe UI', 'Times New Roman', Times, serif
+    font-family: Verdana, 'Segoe UI', 'Times New Roman', Times, serif;
 }
 
 .active {
@@ -30,6 +30,8 @@ nav ul {
     padding-bottom: 50px;
 }
 
-h1 {
-    
+header {
+    background-image: url(/images/NavBar.png);
+    padding: 0px;
+    min-height: 100px;
 }
