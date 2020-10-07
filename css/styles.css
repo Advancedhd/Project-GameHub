@@ -25,6 +25,7 @@ nav a:hover {
 }
 
 nav ul {
+    display: inline-block;
     font-size: 25px;
     margin-top: 83px;
     margin-left: 300px;
@@ -58,8 +59,32 @@ nav ul {
 }
 
 #logo {
-    background-position: top, left;
-    z-index: 3;
-    margin-left: 0px ;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: -2050px;
+    height: auto;
+    z-index: 5;
+    position: absolute;
+}
+
+#classh31 {
+    color: darkred;
+    margin-top: -930px;
+    margin-left: 100px;
+    z-index: 4;
+    position: absolute;
+}
+
+#classh32 {
+    margin-top: -930px;
+    margin-left: 400px;
+    z-index: 4;
+    position: absolute;
+}
+
+#classh33 {
+    margin-top: -930px;
+    margin-left: 700px;
+    z-index: 4;
     position: absolute;
 }
