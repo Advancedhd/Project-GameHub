@@ -25,25 +25,34 @@
         <main>
             <img src="images/NavBar.png" id="NavBar">
             <img src="images/background.jpg" id="bgimg">
-            <img src="images/gamehublogo.png" id="logo">
-            <h3>Create Account</h3>
-            <h4><b>Username:*</b></h4>
-                <p>Insert username</p>
-            <h4><b>Password*</b></h4>
-                <p>Insert password</p>
-            <h4><b>First Name*:</b></h4>
-                <p>Insert firt name</p>
-            <h4><b>Last name*:</b></h4>
-                <p>Insert last name</p>
-            <h4><b>Email Address*</b></h4>
-                <p>Insert email address</p>
-            <h4><b>Phone Number:</b></h4>
-                <p>Insert phone Number</p>
-            <h4><b>Home Address*:</b></h4>
-                <p>Insert home address</p>
-            <h6>Required fields*</h6>
-            <h3>Confirm</h3>
-            <h3>Cancel</h3>
+            <a href="index.html"> <img src="images/gamehublogo.png" id="logo"></a>
+        <fieldset class="accountsignup">
+                <legend>Account Details</legend>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form__input">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="form__input">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" class="form__input">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" class="form__input">
+                    <label for="homeaddress">Home Address</label>
+                    <input type="text" name="homeaddress" id="homeaddress" class="form__input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form__input">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" class="form__input">
+                    <p>Select your gender</p>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="Undisclosed" name="Undisclosed" value="Undisclosed">
+                    <label for="other">Undisclosed</label>
+                    <input type="submit" value="Confirm" class="form__submit form__finish ">
+                    <input type="submit" value="Cancel" class="form__cancel form__finish ">  
+                </legend>
+            </fieldset>
         </main>
         <footer>
             Copyright &copy;

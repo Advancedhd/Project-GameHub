@@ -25,14 +25,19 @@
         <main>
             <img src="images/NavBar.png" id="NavBar">
             <img src="images/background.jpg" id="bgimg">
-            <img src="images/gamehublogo.png" id="logo">
-            <h3>Log In</h3>
-            <h4><b>Email:</b></h4>
-                <p>Insert Email</p>
-            <h4><b>Password:</b></h4>
-                <p>Insert Password</p>
-            <h6>Forget Password</h6>
-            <h6>Forget Email</h6>
+            <a href="index.html"> <img src="images/gamehublogo.png" id="logo"></a>
+            <fieldset class="accountlogin">
+                <legend>Account Details</legend>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" class="form__input">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" class="form__input">
+                </legend>
+            <input type="submit" value="Forgot Email">
+            <input type="submit" value="Forgot Password">
+            <input type="submit" value="Log in">
+            <input type="submit" value="Cancel">
+            </fieldset>
         </main>
         <footer>
             Copyright &copy;
