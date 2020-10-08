@@ -111,7 +111,7 @@ nav ul {
 }
 
 .accountsignup {
-    z-index: 4;
+    z-index: 6;
     margin-left: 7%;
     margin-right: 7%;
     margin-top: -45%;
@@ -120,7 +120,7 @@ nav ul {
 
 .accountlogin {
     font-size: 120%;
-    z-index: 4;
+    z-index: 6;
     margin-left: 7%;
     margin-right: 7%;
     margin-top: -45%;
