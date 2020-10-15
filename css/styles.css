@@ -1,3 +1,17 @@
+@media screen and (max-width: 1750px) {
+
+	nav ul {
+		display: inline-block;
+        font-size: 100%;
+        margin-top: 4.5%;
+        margin-left: 20%;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 6;
+		}
+}
+
+
 body {
     background-color: #8E8E8E;
     color: #FFF;
@@ -7,8 +21,9 @@ body {
 
 .active {
     background-color: #000;
-    color: #FFF;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    size: 100%;
 }
 
 nav li {
@@ -16,6 +31,7 @@ nav li {
 }
 
 nav a {
+    color: coral;
     text-decoration: none;
     padding: 40px;
     font-size: 100%;
@@ -126,3 +142,4 @@ nav ul {
     margin-top: -45%;
     position: absolute;
 }
+
