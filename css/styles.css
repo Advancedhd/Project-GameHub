@@ -1,151 +1,149 @@
-@media screen and (max-width: 1750px) {
-  nav ul {
-    display: inline-block;
-    font-size: 100%;
-    margin-top: 4.5%;
-    margin-left: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 6;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background-color: rgb(112, 112, 112);
+  color: #fff;
+  font-family: Verdana, "Segoe UI", "Times New Roman", Times, serif;
+  margin: 0px;
 }
 
 .active {
   background-color: black;
-  color: coral;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   size: 100%;
   border: 5px solid coral;
   border-radius: 50px 50px 50px 50px;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 100%;
-  padding: 10%;
-  border: 2px solid coral;
-  border-radius: 50px 50px 50px 50px;
-  background-position: center;
-}
-
-nav a:hover {
-  color: #337eff;
-}
-
-nav ul {
-  display: inline-block;
-  font-size: 140%;
-  margin-top: 4.5%;
-  margin-left: 20%;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 6;
-}
-
-body {
-  background-color: #8e8e8e;
-  color: #fff;
-  font-family: Verdana, "Segoe UI", "Times New Roman", Times, serif;
-  margin: 0px;
-}
-
-#bgimg {
-  width: 100%;
-  height: 100%;
-  margin: 0mm;
-  position: relative;
-  z-index: 4;
-}
-
-#NavLink {
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 6;
-}
-
-#NavBarImg {
-  width: 100%;
-  margin: 0mm;
-  position: absolute;
-  z-index: 5;
-}
-
-#logo {
-  width: 12%;
-  margin-top: 1.5%;
-  margin-left: -97%;
-  height: auto;
-  z-index: 5;
-  position: absolute;
-}
+/*text decoration*/
 
 #classh31 {
   color: darkred;
   margin-top: -44%;
   margin-left: 7%;
-  font-size: 1vw;
-  z-index: 4;
+  font-size: 100%;
   position: absolute;
 }
 
 #classh32 {
   margin-top: -44%;
   margin-left: 21%;
-  z-index: 4;
-  font-size: 1vw;
+  font-size: 100%;
   position: absolute;
 }
 
 #classh33 {
   margin-top: -44%;
   margin-left: 37%;
-  z-index: 4;
-  font-size: 1vw;
+  font-size: 100%;
   position: absolute;
 }
 
-.form__input {
-  display: block;
+/*Navigation bar*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
 }
 
-.form__finish {
-  display: inline-block;
-  font-size: 20px;
+#logo {
+  height: 120px;
+  width: 200px;
+  margin-left: 1%;
 }
 
-.form__submit {
-  margin-left: 10%;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
 }
 
-.form__cancel {
+.nav-links li {
+  list-style: none;
   margin-left: 5%;
+  color: coral;
 }
 
-.accountsignup {
-  z-index: 6;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: -45%;
-  position: absolute;
+.nav-links a {
+  color: coral;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 1%;
 }
 
-.accountlogin {
-  font-size: 120%;
-  z-index: 6;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: -45%;
-  position: absolute;
+/*hamburger menu*/
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  background-color: coral;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 13vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkfade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
