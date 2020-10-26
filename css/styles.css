@@ -6,13 +6,17 @@
 
 body {
   background-color: gray;
+  z-index: -1;
 }
 
-.header {
-  padding: 13px 0;
+header {
+  z-index: 6;
   height: 80px;
-  justify-content: space-between;
   background-color: gray;
+}
+
+main {
+  z-index: 4;
 }
 
 /*navigation*/
@@ -20,18 +24,20 @@ body {
   padding: 20px;
 }
 .form__input__search {
+  float: left;
+  text-align: center;
+  align-content: center;
   border-radius: 30px 0px 0px 30px;
   border: 2px solid coral;
   background-color: silver;
-  margin-left: 23px;
+  z-index: 5;
+  margin-left: 33%;
 }
 
 .nav-links button {
-  float: right;
-  width: 10%;
-  padding: 3px;
-  margin-top: 0%;
-  margin-right: 30%;
+  float: left;
+  width: 20px;
+  height: 19px;
   background: silver;
   color: coral;
   font-size: 10px;
@@ -39,6 +45,8 @@ body {
   border-left: none;
   cursor: pointer;
   border-radius: 0px 30px 30px 0px;
+  z-index: 5;
+  margin-top: -18px;
 }
 
 .active {
@@ -47,7 +55,6 @@ body {
 }
 
 .navigationbar {
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -60,11 +67,12 @@ body {
 }
 
 nav {
-  position: absolute;
+  z-index: 6;
   background-color: black;
-  top: auto;
   left: 0;
   width: 100%;
+  border: 1px solid coral;
+  list-style-type: none;
 }
 
 .fasfabars {
@@ -76,15 +84,17 @@ nav {
 }
 
 .nav-links li {
-  padding: 0 20px;
   text-decoration: none;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .nav-links li a {
   display: inline-block;
-  padding: 6px;
   color: coral;
   text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-links a:hover {
@@ -102,12 +112,91 @@ nav {
 }
 #hamburgermeny:checked ~ .nav-links {
   display: block;
+  position: relative;
+  z-index: 5;
+}
+
+/*Main content*/
+
+main#mainhome {
+  display: grid;
+  position: relative;
+  z-index: -1;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 7%;
+}
+
+#mainhome div {
+  position: relative;
+  display: grid;
+  background-color: rgb(173, 187, 187);
+  text-align: center;
+  justify-content: center;
+  border-radius: 50px;
+  box-shadow: 1px solid black;
+}
+
+#mainhome div img {
+  border-radius: 50px;
+}
+
+.siteinformation div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.infophoto img {
+  border-radius: 50% !important;
+}
+
+.card {
+  justify-content: center;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.card h1 {
+  grid-template-rows: none;
+  grid-template-columns: none;
+}
+
+.card div {
+  text-align: center;
+}
+#activedesktopmq2 {
+  display: none !important;
+}
+
+#activedesktopmq3 {
+  display: none !important;
+}
+
+.Addtocart {
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  width: 100px;
+  justify-self: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin: 10px;
+  text-align: center;
 }
 
 /*desktop*/
 /*resolution 1100-1900px*/
 
 @media only screen and (min-width: 1100px) and (max-width: 1900px) {
+  /*navigation*/
+
   .fasfabars {
     display: none;
   }
@@ -117,7 +206,6 @@ nav {
     display: flex;
     float: right;
     text-decoration: none;
-    list-style-type: none;
     text-align: center;
   }
   #logo {
@@ -129,11 +217,50 @@ nav {
   }
   .nav-links button {
     margin-right: 1%;
+    padding: 1%;
+  }
+  .form__input__search {
+    margin-top: 7%;
+    margin-left: 0;
+    float: left;
+    border-radius: 30px;
+  }
+  .nav-links li button {
+    margin-top: -50%;
+    border-radius: 30px;
+    width: 30px;
+  }
+
+  /*home main content*/
+
+  main#mainhome {
+    grid-template-columns: 1fr 1fr;
+  }
+  .siteinformation {
+    grid-template-rows: 6 (1fr);
+    grid-column: 1/3;
+  }
+  .buyers {
+    grid-column: 1/3;
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+  .sellers {
+    grid-column: 3/6;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .preorder {
+    grid-column: 1/6;
+    margin-top: 100px;
   }
 }
+
 /*resolution 1901-2500px*/
 
 @media only screen and (min-width: 1901px) and (max-width: 2500px) {
+  /*navigation*/
+
   .fasfabars {
     display: none;
   }
@@ -153,14 +280,55 @@ nav {
     padding-left: 60px;
     text-align: center;
   }
-  .nav-links button {
-    margin-right: 1%;
+
+  .form__input__search {
+    margin-top: 7%;
+    margin-left: 0;
+    float: left;
+    border-radius: 30px;
+  }
+  .nav-links li button {
+    margin-top: 40%;
+    border-radius: 30px;
+    width: 30px;
+  }
+
+  main#mainhome {
+    grid-template-columns: 1fr 1fr;
+  }
+  .siteinformation {
+    grid-template-rows: 6 (1fr);
+    grid-column: 1/3;
+  }
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .buyers {
+    grid-column: 1/3;
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+  .sellers {
+    grid-column: 3/6;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .preorder {
+    grid-column: 1/6;
+    margin-top: 100px;
+  }
+  #activedesktopmq2 {
+    display: inline-block !important;
   }
 }
 
 /*resolution 2501px to */
 
 @media only screen and (min-width: 2501px) {
+  /*navigation*/
+
   .fasfabars {
     display: none;
   }
@@ -181,7 +349,49 @@ nav {
     text-align: center;
   }
 
-  .nav-links button {
-    margin-right: 1%;
+  .form__input__search {
+    margin-top: 11%;
+    margin-left: 0;
+    float: left;
+    border-radius: 30px;
+  }
+  .nav-links li button {
+    margin-top: 63%;
+    border-radius: 30px;
+    width: 30px;
+  }
+
+  main#mainhome {
+    grid-template-columns: 1fr 1fr;
+  }
+  .siteinformation {
+    grid-template-rows: 6 (1fr);
+    grid-column: 1/3;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .buyers {
+    grid-column: 1/3;
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+  .sellers {
+    grid-column: 3/6;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .preorder {
+    grid-column: 1/6;
+    margin-top: 100px;
+  }
+  #activedesktopmq2 {
+    display: inline-block !important;
+  }
+  #activedesktopmq3 {
+    display: inline-block !important;
   }
 }

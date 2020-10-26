@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="Headerhome">
         <nav class="nav">
             <a href="index.html"> <img src="images/gamehublogo.png" id="logo"></a>
             <input type="checkbox" id="hamburgermeny">
                 <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
             <ul class="nav-links">
-                <input type="search" name="Search" class="form__input__search" placeholder="Search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <li><input type="search" name="Search" class="form__input__search" placeholder="Search"></li>
+                <li><button type="submit"><i class="fa fa-search"></i></button></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="sellers.html">Sellers</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -28,20 +28,107 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h3 id="classh31">Hot Deals</h3>
-        <h3 id="classh32">New Releases</h3>
-        <h3 id="classh33">Upcoming games</h3>
-        <p>We sell both used and new games. Used games at a discounted price, money back guaranteed if the bought used
-            game is broken.</p>
-        <h3>Sellers</h3>
-        <p>Here you can sell your used game for a discounted price based on quality. Working games only.</p>
-        <h3>Pre Order Available</h3>
-        <p>Pre order available for almost all new big releases, get the latest games as early as possible.
-        </p>
+    <main id="mainhome">
+        <div>
+            <h1>Hot Deals</h1>
+            <div class="card">
+                <div><img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="auto"></div>
+                <div><img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto"></div>
+                <div id="activedesktopmq2"><img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="100%"></div>
+                <div id="activedesktopmq3"><img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto"></div>
+                <div class="cardcontent">
+                    <h2>Minecraft Windows</h2>
+                    <h3>14.99€</h3>
+                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                </div>
+                <div>
+                    <div>
+                        <h2>Call of Duty: Black Ops</h2>
+                        <h3>44.99€</h3>
+                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="activedesktopmq2">
+                    <div>
+                        <h2>Minecraft Windows</h2>
+                        <h3>14.99€</h3>
+                        <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="activedesktopmq3">
+                    <div>
+                        <h2>Call of Duty: Black Ops</h2>
+                        <h3>44.99€</h3>
+                        <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>New Releases</h1>
+            <div class="card">
+                <div><img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="100%"></div>
+                <div><img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto"></div>
+                <div id="activedesktopmq2"><img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="100%"></div>
+                <div id="activedesktopmq3"><img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto"></div>
+                <div>
+                    <div>
+                        <h2>Minecraft Windows</h2>
+                        <h3>14.99€</h3>
+                        <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Call of Duty: Black Ops</h2>
+                        <h3>44.99€</h3>
+                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="activedesktopmq2">
+                    <div>
+                        <h2>Minecraft Windows</h2>
+                        <h3>14.99€</h3>
+                        <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="activedesktopmq3">
+                    <div>
+                        <h2>Call of Duty: Black Ops</h2>
+                        <h3>44.99€</h3>
+                        <button type="submit" Class="Addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="siteinformation">
+            <div class="buyers">
+                <div class="infophoto"><img src="images/deskplay.jpg" alt="Buyers" width="100%" height="auto"></div>
+                <h2>Buyers</h2>
+                <div>
+                <p>We sell both used and new games. Used games at a discounted price, money back guaranteed if the bought used
+                    game is broken.</p>
+                </div>
+            </div>
+            <div class="sellers">
+                <div class="infophoto"><img src="images/gamecenter.jpg" alt="Buyers" width="100%" height="auto"></div>
+                <h2>Sellers</h2>
+                <div>
+                <p>Here you can sell your used game for a discounted price based on quality. Working games only.</p>
+                </div>
+            </div>
+            <div class="preorder">
+                <div class="infophoto"><img src="images/competetiveplay.jpg" alt="Buyers" width="100%" height="auto"></div>
+                <h2>Pre Order Available</h2>
+                <div>
+                    <p>Pre order available for almost all new big releases, get the latest games as early as possible.</p>
+                </div>
+            </div>
+        </div>
+            
     </main>
-    <footer>
-        Copyright &copy;
+    <footer class="Footerhome">
+        Copyright &copy; Gamehub Corp 2020
     </footer>
 
 </body>
