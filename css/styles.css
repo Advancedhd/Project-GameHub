@@ -58,6 +58,7 @@ main {
   display: flex;
   justify-content: space-between;
   height: auto;
+  z-index: 4;
 }
 
 #logo {
@@ -87,6 +88,7 @@ nav {
   text-decoration: none;
   margin-right: 20px;
   text-align: center;
+  z-index: 6;
 }
 
 .nav-links li a {
@@ -95,6 +97,7 @@ nav {
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 10px;
+  z-index: 6;
 }
 
 .nav-links a:hover {
@@ -113,7 +116,7 @@ nav {
 #hamburgermeny:checked ~ .nav-links {
   display: block;
   position: relative;
-  z-index: 5;
+  z-index: 6;
 }
 
 /*Main content*/
@@ -127,6 +130,7 @@ main#mainhome {
   width: 100%;
   padding-left: 11px;
   padding-right: 11px;
+  z-index: -1;
 }
 
 #mainhome div {
@@ -138,6 +142,7 @@ main#mainhome {
   box-shadow: 1px solid black;
   padding-left: 5px;
   padding-right: 5px;
+  z-index: -1;
 }
 
 #mainhome div img {
