@@ -108,7 +108,46 @@ nav {
   color: blueviolet;
 }
 
-/*hamburger*/
+/*hamburgermeny and categoriesmeny*/
+
+.categories-meny-options {
+  padding: 10px 10px 10px 10px;
+  color: coral;
+}
+
+.categories-meny-options h3 {
+  text-decoration: underline;
+}
+
+.categories-meny-options li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.categories-meny-options,
+#categories-meny {
+  display: none;
+  background-color: black;
+  width: 35%;
+  text-decoration: none;
+}
+
+#categories-meny:checked ~ .categories-meny-options {
+  display: block !important;
+  position: absolute;
+  z-index: 6;
+  border: 1px solid coral;
+}
+
+.categories-fasfabars {
+  padding-top: 20%;
+  width: 100%;
+  background-color: black;
+  color: coral;
+  padding-bottom: 10px;
+  border: 1px solid coral;
+}
+
 .nav-links,
 #hamburgermeny {
   display: none;
@@ -121,31 +160,34 @@ nav {
 
 /*Main content*/
 
-main#mainhome {
+main#mainhome,
+main #games-grid {
   display: grid;
   z-index: -1;
   text-align: center;
   gap: 20px;
-  margin-top: 7%;
+  margin-top: -50%;
   width: 100%;
+  padding-top: 100px;
   padding-left: 11px;
   padding-right: 11px;
   z-index: -1;
 }
 
-#mainhome div {
+#mainhome div,
+#games-grid div {
   display: grid;
   background-color: rgb(173, 187, 187);
   text-align: center;
   justify-content: center;
   border-radius: 50px;
   box-shadow: 1px solid black;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px 5px 5px 5px;
   z-index: -1;
 }
 
-#mainhome div img {
+#mainhome div img,
+#games-grid div img {
   border-radius: 50px;
 }
 
@@ -158,10 +200,19 @@ main#mainhome {
   border-radius: 50% !important;
 }
 
-.card {
+#mainhome .card {
   justify-content: center;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 0.85r 0.5fr;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+#games-grid .card {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
   gap: 5px;
   padding-top: 10px;
 }
@@ -174,15 +225,13 @@ main#mainhome {
 .card div {
   text-align: center;
 }
-#activedesktopmq2 {
-  display: none !important;
+#activedesktopmq2,
+#activedesktopmq3,
+.gamesactivedesktopmq3 {
+  display: none;
 }
 
-#activedesktopmq3 {
-  display: none !important;
-}
-
-.Addtocart {
+button.Addtocart {
   background-color: black;
   color: white;
   border-radius: 40px;
@@ -195,6 +244,43 @@ main#mainhome {
 footer {
   margin: 10px;
   text-align: center;
+}
+/*headers*/
+
+main button.gameshotdeals {
+  float: left;
+  margin: 6% 0px 0% 0%;
+  padding: 10px;
+  width: 50%;
+  color: rgb(175, 0, 0);
+  background-color: black;
+  border: 1px solid coral;
+  cursor: pointer;
+}
+
+main button.gamesnewrel {
+  float: left;
+  margin: 6% 0px 0% 0%;
+  padding: 10px;
+  width: 50%;
+  color: rgb(175, 0, 0);
+  background-color: black;
+  border: 1px solid coral;
+  cursor: pointer;
+}
+
+.pages {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  color: coral;
+  width: 100%;
+  background-color: black;
+  border: coral 1px solid;
+}
+.pages h4 {
+  display: inline-block;
+  cursor: pointer;
 }
 
 /*desktop*/
@@ -237,14 +323,27 @@ footer {
     width: 30px;
   }
 
+  /*categories*/
+  .categories-fasfabars {
+    padding-top: 9.5%;
+  }
+
   /*home main content*/
 
   main#mainhome {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr !important;
     width: 100%;
   }
+
+  #games-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0% !important;
+  }
+
   .siteinformation {
-    grid-template-rows: 6 (1fr);
+    grid-template-rows: 1 (1fr);
     grid-column: 1/3;
   }
   .buyers {
@@ -258,6 +357,16 @@ footer {
   .preorder {
     grid-column: 1/6;
     margin-top: 100px;
+  }
+
+  .gamesactivedesktopmq2,
+  .gamesactivedesktopmq3 {
+    display: inline-block;
+  }
+  .gameshotdeals,
+  .gamesnewrel {
+    margin-top: 5% !important
+    ;
   }
 }
 
@@ -298,6 +407,13 @@ footer {
     width: 30px;
   }
 
+  /*categories*/
+  .categories-fasfabars {
+    padding-top: 7.5%;
+  }
+
+  /*Mainhome content*/
+
   main#mainhome {
     grid-template-columns: 1fr 1fr;
   }
@@ -306,8 +422,8 @@ footer {
     grid-column: 1/3;
   }
   .card {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr !important;
   }
 
   .buyers {
@@ -326,6 +442,14 @@ footer {
   }
   #activedesktopmq2 {
     display: inline-block !important;
+  }
+  #activedesktopmq3 {
+    display: none !important;
+  }
+  .gameshotdeals,
+  .gamesnewrel {
+    margin-top: 4% !important
+    ;
   }
 }
 
@@ -366,6 +490,13 @@ footer {
     width: 30px;
   }
 
+  /*categories*/
+  .categories-fasfabars {
+    padding-top: 5.5%;
+  }
+
+  /*home content*/
+
   main#mainhome {
     grid-template-columns: 1fr 1fr;
   }
@@ -375,8 +506,7 @@ footer {
   }
 
   .card {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
   }
 
   .buyers {
@@ -396,7 +526,13 @@ footer {
   #activedesktopmq2 {
     display: inline-block !important;
   }
+
   #activedesktopmq3 {
-    display: inline-block !important;
+    display: inline-block;
+  }
+  .gameshotdeals,
+  .gamesnewrel {
+    margin-top: 3% !important
+    ;
   }
 }
