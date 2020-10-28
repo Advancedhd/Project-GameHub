@@ -50,7 +50,7 @@ main {
 }
 
 .active {
-  border: 5px solid coral;
+  border: 2px solid coral;
   border-radius: 30px;
 }
 
