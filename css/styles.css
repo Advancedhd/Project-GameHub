@@ -427,8 +427,7 @@ main button.gamesnewrel {
   margin-bottom: 35px;
 }
 
-.feedbacksend,
-.contactsend {
+.feedbacksend {
   right: 42%;
   bottom: 0;
   display: block;
