@@ -19,7 +19,7 @@
                         <li><button type="submit"><i class="fa fa-search"></i></button></li>
                         <li><a href="games.html">Games</a></li>
                         <li><a href="sellers.html">Sellers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="signup.html">Signup</a></li>
                         <li><a href="cart.html">Cart</a></li>
@@ -28,24 +28,46 @@
             </div>
         </header>
         <main>
-            <h1><b>Contact</b></h1>
-                <p>Contact us with any questions you might have.</p>
-                <h5>Email</h5>
-                    <p>Gamehubsup@hotmail.com</p>
-                <h5>Phone</h5>
-                    <p>+123 12341233412</p>
-                <h5>Address</h5>
-                    <p>something 123</p>
-            <h3><b>Feedback</b></h3>
-                <h5>Recommendation</h5>
-                    <p>Choose...&#8595; </p>
-                <h5>Name</h5>
-                    <p>Your name</p>
-                <h5>Email Address</h5>
-                    <p>Your Email Address</p>
-                <h5>Feedback Message</h5>
-                    <p>Insert your feedback here</p>
-                <h4>Publish</h4>
+            <div class="contactfeedback">
+                <div class="contact">
+                    <div>
+                    <h1 class="contacttext"><b>Contact</b></h1>
+                        <p>Contact us with any questions you might have.</p>
+                    </div>
+                    <div class="contactcontent">
+                    <h5>Email</h5>
+                        <p>Gamehubsup@hotmail.com</p>
+                    </div>
+                    <div class="contactcontent">
+                    <h5>Phone</h5>
+                        <p>+123 12341233412</p>
+                    </div>
+                    <div class="contactcontent">
+                    <h5>Address</h5>
+                        <p>something 123</p>
+                    </div>
+                    <button class=contactsend>Send</button>
+                </div>
+            
+                <div class="feedback">
+                    <h1 class="feedbacktext"><b>Feedback</b></h1>
+                    <div class="feedbackcontent">
+                        <label for="firstname" class="signuplabel" >Your Name</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="feedbackcontent">
+                        <label for="email"  class="signuplabel">Email Address</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="feedbackcontent">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Your Feedback" style="height:200px"></textarea>
+                    </div>
+                    <div>
+                        <button class="feedbacksend">Send</button>
+                    </div>
+                </div>
+            </div>
          </main>
         <footer>
             Copyright &copy;

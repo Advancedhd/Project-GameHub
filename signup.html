@@ -23,7 +23,7 @@
                     <li><a href="sellers.html">Sellers</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="signup.html" class="active">Signup</a></li>
                     <li><a href="cart.html">Cart</a></li>
                 </ul>
             </nav>
@@ -31,40 +31,39 @@
     </header>
     <main>
         <fieldset class="accountsignup">
-            <legend>Account Details</legend>
-            <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" class="form__input">
-
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" class="form__input">
-
-            <label for="email">Email Address</label>
-            <input type="text" name="email" id="email" class="form__input">
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" class="form__input">
-
-            <label for="homeaddress">Home Address</label>
-            <input type="text" name="homeaddress" id="homeaddress" class="form__input">
-
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" class="form__input">
-
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" class="form__input">
-
-            <p>Select your gender</p>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-
-            <input type="radio" id="undisclosed" name="undisclosed" value="undisclosed">
-            <label for="undisclosed">Undisclosed</label>
-
-            <input type="submit" value="Confirm" class="form__submit form__finish ">
-            <input type="submit" value="Cancel" class="form__cancel form__finish ">
+            <h1 class="signuptext">Sign up!</h1>
+            <div class="signupcontent">
+                <label for="firstname" class="signuplabel" >First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+            <div class="signupcontent">
+                <label for="lastname"  class="signuplabel">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            <div class="signupcontent">
+                <label for="email"  class="signuplabel">Email Address</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="signupcontent">   
+                <label for="phone"  class="signuplabel">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="signupcontent">
+                <label for="homeaddress"  class="signuplabel">Home Address</label>
+                <input type="text" name="homeaddress" id="homeaddress">
+            </div>
+            <div class="signupcontent">
+                <label for="username"  class="signuplabel">Username</label>
+                <input type="text" name="username" id="username">
+            </div> 
+            <div class="signupcontent">
+                <label for="password"  class="signuplabel">Password</label>
+                <input type="text" name="password" id="password">
+            </div>
+        <div class="signupbuttons"> 
+            <button type="submit" class="signupconfirm"><a href="login.html">Confirm</a></button>
+            <button type="submit" class="signupcancel"><a href="index.html">Cancel</a></button>
+        </div>
         </fieldset>
     </main>
     <footer>

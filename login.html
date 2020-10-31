@@ -23,7 +23,7 @@
                     <li><a href="games.html">Games</a></li>
                     <li><a href="sellers.html">Sellers</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
                     <li><a href="signup.html">Signup</a></li>
                     <li><a href="cart.html">Cart</a></li>
                 </ul>
@@ -32,16 +32,22 @@
     </header>
     <main>
         <fieldset class="accountlogin">
-            <legend>Account Details</legend>
-            <label for="email">Email Address</label>
-            <input type="text" name="email" id="email" class="form__input">
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" class="form__input">
-            </legend>
-            <input type="submit" value="Forgot Email">
-            <input type="submit" value="Forgot Password">
-            <input type="submit" value="Log in">
-            <input type="submit" value="Cancel">
+            <h1 class="logintext">Log In</h1>
+            <div class="logincontent">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" class="form__input" required>
+            </div>
+            <div class="logincontent">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" class="form__input" required>
+            </div>
+            <div class="logincontent">
+                <label class="rememberbox"><input type="checkbox" checked="checked" name="remember" > Remember me </label>
+            </div>
+            <div class="loginbuttons">
+            <button type="submit"><a href="signup.html">Log in</a></button>
+            <input type="submit" value="Forgot Password" class="forgotpassword">
+            </div>
         </fieldset>
     </main>
     <footer>

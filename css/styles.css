@@ -19,6 +19,15 @@ main {
   z-index: 4;
 }
 
+textarea {
+  resize: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
 /*navigation*/
 ::placeholder {
   padding: 20px;
@@ -283,6 +292,205 @@ main button.gamesnewrel {
   cursor: pointer;
 }
 
+/*login*/
+.accountlogin,
+.accountsignup {
+  z-index: 6;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  color: coral;
+  border: 1px solid coral;
+  padding: 5%;
+  margin-top: 5.5%;
+  margin-left: 15%;
+  float: left;
+  align-content: center;
+}
+
+.accountlogin button,
+.accountsignup button {
+  display: block;
+  background-color: coral;
+  color: black;
+  border-radius: 30px 30px 30px 30px;
+  padding: 14px 20px;
+  margin: 16px 0px 16px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.accountlogin div,
+.accountsignup div {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.rememberbox {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+
+.signupcontent,
+.logincontent {
+  float: left;
+  border: 1px solid coral;
+  width: 100%;
+}
+
+.signupinput {
+  float: right;
+}
+
+.logintext {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.forgotpassword {
+  background-color: coral;
+  padding: 10px;
+  text-align: center;
+  border-color: coral;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+
+.signupbuttons,
+.loginbuttons {
+  float: left;
+  text-align: center;
+  align-content: center;
+  color: coral;
+}
+
+#firstname,
+#lastname,
+#email,
+#phone,
+#homeaddress,
+#username,
+#password,
+#subject {
+  float: right;
+  width: 100%;
+}
+
+/*feedback and contant forms*/
+.contactfeedback {
+  z-index: 6;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  color: coral;
+  border: 1px solid coral;
+  padding: 5%;
+  margin-top: 5.5%;
+  margin-left: 15%;
+  float: left;
+  align-content: center;
+}
+
+.feedback,
+.contact {
+  position: relative;
+  border: 1px solid coral;
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  color: coral;
+  margin-top: 3%;
+}
+
+.feedback input {
+  float: right;
+}
+.feedback label {
+  float: left;
+}
+
+.feedbackcontent {
+  float: left;
+  border: 1px solid coral;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.contactcontent {
+  float: left;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.feedbacksend,
+.contactsend {
+  right: 42%;
+  bottom: 0;
+  display: block;
+  background-color: coral;
+  color: black;
+  border-radius: 30px 30px 30px 30px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.sellers {
+  position: relative;
+  z-index: -1;
+  width: 99%;
+  background-color: rgb(0, 0, 0);
+  color: coral;
+  border: 1px solid coral;
+  padding: 5%;
+  margin-left: 0.5%;
+  margin-top: 10%;
+  float: left;
+  align-content: center;
+}
+
+.sellerscontent {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.sellerbuttons .button1 {
+  text-decoration: none;
+  right: 10%;
+  bottom: 0;
+  position: absolute;
+  background-color: coral;
+  color: black;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+  width: 30%;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-top: 10%;
+}
+
+.sellerbuttons .button2 {
+  left: 10%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  background-color: coral;
+  color: black;
+  border-radius: 30px 30px 30px 30px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
 /*desktop*/
 /*resolution 1100-1900px*/
 
@@ -368,6 +576,12 @@ main button.gamesnewrel {
     margin-top: 5% !important
     ;
   }
+  /*login and signup*/
+  .accountlogin,
+  .accountsignup {
+    width: 30%;
+    margin-left: 35%;
+  }
 }
 
 /*resolution 1901-2500px*/
@@ -450,6 +664,12 @@ main button.gamesnewrel {
   .gamesnewrel {
     margin-top: 4% !important
     ;
+  }
+
+  .accountlogin,
+  .accountsignup {
+    width: 25%;
+    margin-left: 40%;
   }
 }
 
@@ -534,5 +754,10 @@ main button.gamesnewrel {
   .gamesnewrel {
     margin-top: 3% !important
     ;
+  }
+  .accountlogin,
+  .accountsignup {
+    width: 22%;
+    margin-left: 38%;
   }
 }
