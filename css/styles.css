@@ -445,16 +445,13 @@ main button.gamesnewrel {
 .sellers {
   position: relative;
   z-index: -1;
-  width: 99%;
   background-color: rgb(0, 0, 0);
   color: coral;
   border: 1px solid coral;
-  padding: 5%;
-  margin-left: 0.5%;
-  margin-top: 10%;
-  float: left;
-  align-content: center;
+  margin-top: 4% !important;
   z-index: 3;
+  margin-left: 0 !important;
+  width: 100%;
 }
 
 .sellerscontent {
