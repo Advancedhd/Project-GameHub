@@ -454,6 +454,7 @@ main button.gamesnewrel {
   margin-top: 10%;
   float: left;
   align-content: center;
+  z-index: 3;
 }
 
 .sellerscontent {
@@ -489,6 +490,10 @@ main button.gamesnewrel {
   width: 30%;
   padding: 3px;
   margin-bottom: 5px;
+}
+
+.footer {
+  z-index: -1;
 }
 
 /*desktop*/
