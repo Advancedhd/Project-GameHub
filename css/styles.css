@@ -716,7 +716,7 @@ main button.gamesnewrel {
     margin-left: -40px;
     margin-top: 20px;
   }
-  .sellers {
+  .sellershome {
     grid-column: 3/6;
     margin-left: 40px;
     margin-top: 20px;
@@ -811,7 +811,7 @@ main button.gamesnewrel {
     margin-left: -100px;
     margin-top: 20px;
   }
-  .sellers {
+  .sellershome {
     grid-column: 3/6;
     margin-left: 100px;
     margin-top: 20px;
