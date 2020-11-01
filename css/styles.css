@@ -440,8 +440,6 @@ main button.gamesnewrel {
   position: relative;
   z-index: -1;
   background-color: rgb(0, 0, 0);
-  color: coral;
-  border: 1px solid coral;
   margin-top: 4% !important;
   z-index: 3;
   margin-left: 0 !important;
