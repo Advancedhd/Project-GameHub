@@ -33,23 +33,29 @@ a:link {
   padding: 20px;
 }
 .form__input__search {
-  border-radius: 30px 30px 30px 30px;
+  float: left;
+  text-align: center;
+  align-content: center;
+  border-radius: 30px 0px 0px 30px;
   border: 2px solid coral;
   background-color: silver;
   z-index: 5;
+  margin-left: 33%;
 }
 
 .nav-links button {
+  float: left;
   width: 20px;
-  height: 20px;
+  height: 19px;
   background: silver;
   color: coral;
   font-size: 10px;
   border: 1px solid coral;
   border-left: none;
   cursor: pointer;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 0px 30px 30px 0px;
   z-index: 5;
+  margin-top: -18px;
 }
 
 .active {
@@ -487,72 +493,6 @@ main button.gamesnewrel {
   z-index: -1;
 }
 
-/*cart*/
-
-.shoppingcart {
-  margin-top: 10%;
-  display: grid;
-  background-color: black;
-  color: coral;
-  width: 100%;
-  border: 1px solid coral;
-  text-align: center;
-  padding: 15px;
-}
-
-.shoppingcartcontent {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1f 1fr 1fr 1f 1fr 1fr 1fr;
-  display: grid;
-  border: 1px solid coral;
-
-  padding: 10px;
-}
-
-.shoppingcart h1 {
-  grid-column: 1/4;
-  padding: 10px;
-}
-
-.shoppingcart h3 {
-  grid-column: 1/4;
-}
-
-.qtycontent {
-  grid-column: 2/2;
-  padding: 10px;
-  border: 1px solid coral;
-}
-
-.cartcontentprice {
-  grid-column: 3/4;
-  padding: 10px;
-  border: 1px solid coral;
-}
-
-.shoppingcartcontenttotalprice {
-  grid-row: 6/7;
-  grid-column: 3/4;
-  border: 1px solid coral;
-  padding: 10px;
-}
-
-.shoppingcartbuttons {
-  width: 100%;
-}
-.cartbutton1,
-.cartbutton2 {
-  text-decoration: none;
-  background-color: coral;
-  color: black;
-  border-radius: 30px 30px 30px 30px;
-  cursor: pointer;
-  width: 15%;
-  padding: 3px;
-  margin-bottom: 5px;
-  margin-top: 10%;
-}
-
 /*desktop*/
 /*resolution 1100-1900px*/
 
@@ -644,12 +584,6 @@ main button.gamesnewrel {
     width: 30%;
     margin-left: 35%;
   }
-
-  /*shoppingcartbutton*/
-
-  .shoppingcartbuttons {
-    margin-left: 40%;
-  }
 }
 
 /*resolution 1901-2500px*/
@@ -739,12 +673,6 @@ main button.gamesnewrel {
     width: 25%;
     margin-left: 40%;
   }
-
-  /*shoppingcartbutton*/
-
-  .shoppingcartbuttons {
-    margin-left: 35%;
-  }
 }
 
 /*resolution 2501px to */
@@ -833,9 +761,5 @@ main button.gamesnewrel {
   .accountsignup {
     width: 22%;
     margin-left: 38%;
-  }
-
-  /*shoppingcartbutton*/
-  .shoppingcartbuttons {
   }
 }
