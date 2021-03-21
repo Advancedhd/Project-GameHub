@@ -29,13 +29,11 @@
                 <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
             <ul class="nav-links">
                 <li><input type="search" name="Search" class="form__input__search" placeholder="Search"></li>
-                <li><button type="submit"><i class="fa fa-search"></i></button></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="sellers.html">Sellers</a></li>
+                <li><button type="submit" class="fasfabutton"><i class="fas fa-search"></i></button></li>
+                <li><a href="buyorsell.html">Games</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Signup</a></li>
-                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -47,25 +45,25 @@
                     <img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="auto">
                     <h2>Minecraft Windows</h2>
                     <h3>14.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button class="Addtocart" id="1">Add to Cart</button>
                 </div>
                 <div>
                     <img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto">
                     <h2>Call of Duty: Black Ops</h2>
                     <h3>44.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="2">Add to Cart</button>
                 </div>
                 <div id="activedesktopmq2">
                     <img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="auto">
                     <h2>Minecraft Windows</h2>
                     <h3>14.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="3">Add to Cart</button>
                 </div>
                 <div id="activedesktopmq3">
                     <img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto">
                     <h2>Call of Duty: Black Ops</h2>
                     <h3>44.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart"id="4">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -76,25 +74,25 @@
                     <img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="auto">
                     <h2>Minecraft Windows</h2>
                     <h3>14.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="5">Add to Cart</button>
                 </div>
                 <div>
                     <img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto">
                     <h2>Call of Duty: Black Ops</h2>
                     <h3>44.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="6">Add to Cart</button>
                 </div>
                 <div id="activedesktopmq2">
                     <img src="images/minecraft.jpg" alt="Buy Minecraft" width="100%" height="auto">
                     <h2>Minecraft Windows</h2>
                     <h3>14.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="7">Add to Cart</button>
                 </div>
                 <div id="activedesktopmq3">
                     <img src="images/blackops.png" alt="Buy Blackops" width="100%" height="auto">
                     <h2>Call of Duty: Black Ops</h2>
                     <h3>44.99€</h3>
-                    <button type="submit" Class="Addtocart">Add to Cart</button>
+                    <button type="submit" Class="Addtocart" id="8">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -127,7 +125,8 @@
     <footer class="Footerhome">
         Copyright &copy; Gamehub Corp 2020
     </footer>
-
+    <script src="./js/add2cart.js"></script>
+    <script src="./js/updateCart.js" defer></script>
 </body>
 
 </html>
