@@ -191,9 +191,9 @@ main #games-grid {
   z-index: 2 !important;
   text-align: center;
   gap: 20px;
-  margin-top: -50%;
+  margin-top: -30%;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 11px;
   padding-right: 11px;
   z-index: -1;
@@ -937,9 +937,9 @@ button.feedbacksend {
   }
 }
 
-/*resolution 2501px to */
+/*resolution 2510px to */
 
-@media only screen and (min-width: 2501px) {
+@media only screen and (min-width: 2499px) {
   /*navigation*/
   .img {
     width: 247px;
