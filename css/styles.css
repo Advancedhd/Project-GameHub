@@ -89,7 +89,7 @@ a:link {
   width: auto;
 }
 
-nav {
+.nav {
   z-index: 6;
   background-color: black;
   left: 0;
