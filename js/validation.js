@@ -6,9 +6,8 @@ const email = document.querySelector(".EmailField");
 const submitbutton = document.querySelector(".feedbacksend");
 const msgbox = document.querySelector(".msg");
 const validated = document.querySelector(".validated");
+
 let msg = "";
-
-
 
 function verifyEmail(email) {
  if (/\S+@\S+\.\S+/.test(email)){
@@ -53,7 +52,7 @@ let validateForm = () => {
         msg = ""
     }, 10000);
     if (validationFlag === true) {
-        validated.innerHTML = "Feedback Sent"
+        validated.innerHTML = "Feedback sent!"
     }
 }
 
