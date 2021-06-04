@@ -39,7 +39,7 @@ getData().then(data => {
                 ${sdesc}
                 </div>
                 <div class="buyinfoscreen">
-            </div>
+                </div>
             `
             infocard.innerHTML = format
 
